@@ -134,7 +134,7 @@ function animate(now){
   // RPM -> degree/sec
   const degPerSec = rpm * 360 / 60;
 
-  const rot = drum.getAttribute("rotation") || {x:90,y:0,z:90};
+  const rot = drum.getAttribute("rotation") || {x:360,y:360,z:360};
   rot.z += degPerSec * dt;
   drum.setAttribute("rotation", rot);
 
