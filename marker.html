@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Hiro Marker - Print</title>
+<style>
+@page{size:A4;margin:10mm}
+body{margin:0;text-align:center;font-family:Arial,sans-serif}
+h1{margin:10px 0}
+.marker{width:180mm;max-width:90vw;height:auto}
+p{font-size:16px}
+@media print{
+  h1,p,.printbtn{display:none}
+  .marker{width:180mm;max-width:none}
+}
+</style>
+</head>
+<body>
+<h1>Hiro Marker สำหรับ AR.js</h1>
+<img class="marker"
+src="https://raw.githubusercontent.com/AR-js-org/AR.js/master/data/images/hiro.png"
+alt="AR.js Hiro Marker">
+<p>พิมพ์ภาพนี้บนกระดาษขาว ห้ามย่อจนเล็กเกินไป และหลีกเลี่ยงการบิดเบือนภาพ</p>
+<button class="printbtn" onclick="window.print()">พิมพ์ Marker</button>
+</body>
+</html>
